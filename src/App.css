@@ -1,38 +1,161 @@
-.App {
-  text-align: center;
+.Header {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vmin;
+  margin: 1vmin;
+  color: #2e0039;
+  height: 4vmin;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.AppLogo {
+  height: 3vmin;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Separator {
+  hr {
+    height: 0.3vmin;
+    border: none;
+    background-color: #a7a6a687;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Body {
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  color: #2e0039;
+}
+
+.Box {
+  display: flex;
+  align-items: center;
+  border-radius: 1vmax;
+}
+
+#ConverterScreen
+{
+  width: 50vmax;
+  height: 25vmin;
+  background-color: #2e0039;
   color: white;
+  
+  display: table;
+  margin: 5vmin;
 }
 
-.App-link {
-  color: #61dafb;
+.ConverterRow
+{
+  display: table-row;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ConverterCell
+{
+  display: table-cell;
+}
+
+#ConverterTitle
+{
+  text-align: left;
+  p
+  {
+    font-size: 2.5vh;
+    font-weight: 500;
+    color: white;
+    margin-left: 10%;
   }
-  to {
-    transform: rotate(360deg);
-  }
+}
+
+#SelectCell
+{
+  padding-left: 3%;
+}
+
+.ConverterSelect {
+  width: 90%;
+  height: 2vmin;
+  background-color: #2e0039;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: white;
+}
+
+#InputCell
+{
+  text-align: right;
+  padding-right: 3%;
+}
+
+.ConverterInput {
+  text-align: right;
+  background-color: #2e0039;
+  color: white;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: white;
+}
+
+#Unit1Cell
+{
+  text-align: left;
+}
+
+#SaveConvertionCell
+{
+  padding-left: 3%;
+}
+
+#AlignRigth
+{
+  text-align: right;
+}
+
+.ConverterImage {
+  height: 2vmin;
+}
+
+.SavedGrid{
+  display: grid;
+  margin: 1vmin;
+  width: 50vmax;
+  border: 3px solid red;
+}
+
+.SavedTitle{
+  color: rgb(103, 103, 103);
+  font-size: 2vh;
+  font-weight: 700;
+}
+
+#SavedConvertions
+{
+  display: grid;
+  grid-template-areas:
+    'Conversion Delete';
+  width: 45%;
+  height: 5vmin;
+  background-color: rgb(172, 172, 172);
+  color: black;
+}
+
+.alignLeft
+{
+  text-align: left;
+  padding-left: 10%;
+}
+
+.alignRigth
+{
+  text-align: right;
+  padding-right: 10%;
 }
